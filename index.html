@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Сайт под ключ" />
+    <title>Web Studio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/modern-normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="nav">
+          <a class="logo" href="#"><span class="logo_fword">Web</span>Studio</a>
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a class="nav__link nav__link--current" href="#"> Студия </a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="portfolio.html"> Портфолио </a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#"> Контакты </a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts">
+          <li>
+            <a class="contacts_item" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+            <a class="contacts_item" href="tel:+380961111111">
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section section--dark section-h1">
+        <div class="container">
+          <h1 class="section__title section__title-bigger">
+            Эфективные решения для вашего бизнеса
+          </h1>
+          <button class="button button__order button--blue" type="button">
+            Заказать услугу
+          </button>
+        </div>
+      </section>
+      <section class="section section--bottom-p-zero">
+        <div class="container">
+          <div class="grid">
+            <h2 class="visually-hidden">Наши преимущества</h2>
+            <ul class="advantages">
+              <li class="advantages__item">
+                <h3 class="advantages__title">Внимание к деталям</h3>
+                <p class="advantages__desc">
+                  Идейные соображения, а также начало повседневной работы по
+                  формированию позиции.
+                </p>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__title">Пунктуальность</h3>
+                <p class="advantages__desc">
+                  Задача организации, в особенности же рамки и место обучения
+                  кадров влечет за собой.
+                </p>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__title">Планирование</h3>
+                <p class="advantages__desc">
+                  Равным образом консультация с широким активом в значительной
+                  степени обуславливает.
+                </p>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__title">Современные технологии</h3>
+                <p class="advantages__desc">
+                  Значимость этих проблем настолько очевидна, что реализация
+                  плановых заданий.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Чем мы занимаемся</h2>
+          <ul class="doings">
+            <li class="doings__item">
+              <img
+                class="doings__img"
+                src="images/workProgramer.jpg"
+                alt="програмист пишет код"
+              />
+            </li>
+            <li class="doings__item">
+              <img
+                class="doings__img"
+                src="images/workDesigner.jpg"
+                alt="ui дизайнер делает интерфейс для мобильного приложения"
+              />
+            </li>
+            <li class="doings__item">
+              <img
+                class="doings__img"
+                src="images/workArtist.jpg"
+                alt="веб-дизайнер выбирает цвет на графическом планшете"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section section--gray-light">
+        <div class="container">
+          <h2 class="section__title">Наша команда</h2>
+          <ul class="team">
+            <li class="team__item">
+              <img
+                class="team_img"
+                src="images/person1.jpg"
+                alt="мужчина: в очках, короткая стрижка, борода, темные волосы, бордовая рубашка"
+              />
+              <h3 class="team__title">Игорь Демьяненко</h3>
+              <p class="team_desc">Product Designer</p>
+            </li>
+            <li class="team__item">
+              <img
+                class="team_img"
+                src="images/person2.jpg"
+                alt="женщина: блондинка, в очках, в черном пиджаке"
+              />
+              <h3 class="team__title">Ольга Репина</h3>
+              <p class="team_desc">Frontend Developer</p>
+            </li>
+            <li class="team__item">
+              <img
+                class="team_img"
+                src="images/person3.jpg"
+                alt="мужчина: короткая стрижка, длинная щетина, темные волосы, белая рубашка"
+              />
+              <h3 class="team__title">Николай Тарасов</h3>
+              <p class="team_desc">Marketing</p>
+            </li>
+            <li class="team__item">
+              <img
+                class="team_img"
+                src="images/person4.jpg"
+                alt="мужчина: короткая стрижка, борода, темные волосы, черная футболка"
+              />
+              <h3 class="team__title">Михаил Ермаков</h3>
+              <p class="team_desc">UI Designer</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <a class="logo logo--white" href="#">
+          <span class="logo_fword">Web</span> Studio
+        </a>
+        <address class="address">
+          <ul class="address__list">
+            <li class="address__item">
+              <a
+                class="address__contact"
+                href="https://www.google.com/maps/search/?api=1&query=Киев+Леси+Украинки+26"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                г. Киев, пр-т Леси Украинки, 26
+              </a>
+            </li>
+            <li class="address__item">
+              <a class="address__contact" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="address__item">
+              <a class="address__contact" href="tel:+380961111111">
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+  </body>
+</html>
