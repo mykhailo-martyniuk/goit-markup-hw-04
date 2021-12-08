@@ -23,6 +23,10 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3,
@@ -54,6 +58,7 @@ body {
 
 .container {
   width: 1200px;
+  padding: 0 15px;
   margin: auto;
 }
 
@@ -164,17 +169,14 @@ body {
 }
 
 .contacts__icon {
+  fill: var(--text-color-grey);
   margin-right: 10px;
 }
 
 .contacts__icon--email {
-  width: 16px;
-  height: 12px;
 }
 
 .contacts__icon--phone {
-  width: 10px;
-  height: 16px;
 }
 
 .section {
@@ -193,6 +195,7 @@ body {
     url("../images/bg1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .section--bottom-p-zero {
@@ -249,6 +252,7 @@ body {
 button:active {
   color: var(--color-white);
 
+  cursor: pointer;
   box-shadow: var(--button-hover-shadow);
   background: var(--brand-color);
 }
@@ -301,8 +305,6 @@ button:active {
 }
 
 .advantages__icon {
-  width: 70px;
-  height: 70px;
 }
 
 .advantages__title {
@@ -360,6 +362,8 @@ button:active {
 
 .team__bottom-container {
   padding: 30px 0;
+
+  background-color: var(--color-white);
 }
 
 .team__title {
@@ -421,11 +425,11 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .social-medias__icon {
-  width: 20px;
-  height: 20px;
   fill: var(--color-white);
 }
 .team__social-icon {
@@ -438,7 +442,6 @@ button:active {
 }
 
 .regular-customers__item {
-  padding: 16px 32px;
 
   border: 1px solid var(--color-icon-grey);
   border-radius: 4px;
@@ -460,10 +463,14 @@ button:active {
   border-color: var(--brand-color);
 }
 
-.regular-customers__icon {
-  width: 106px;
-  height: 60px;
+.regular-customers__link {
+  padding: 16px 32px;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
+.regular-customers__icon {
   fill: var(--color-icon-grey);
 }
 
@@ -474,6 +481,7 @@ button:active {
 
 .footer__container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer__el-wrap + .footer__el-wrap {
@@ -511,9 +519,9 @@ button:active {
   color: var(--color-white);
 }
 
-.footer__header {
+.footer__call {
   margin-bottom: 20px;
-  padding-top: 12px;
+  display: block;
 
   font-size: 14px;
   line-height: 16px;
@@ -541,14 +549,20 @@ button:active {
   flex-wrap: wrap;
 }
 
+.project-list__link-wrap {
+  display: block;
+}
+
+.project-list__link-wrap:hover,
+.project-list__link-wrap:focus,
+.project-list__link-wrap:active  {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .project-list__item {
   margin: 15px;
   max-width: 370px;
-}
-
-.project-list__item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-list__bottom-container {
